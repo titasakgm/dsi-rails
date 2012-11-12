@@ -491,6 +491,16 @@ Ext.application({
       }
     });
     toolbarItems.push(btn_print);
+    
+    var btn_logout = new Ext.Button({
+      text: '<b>Logout</b>',
+      handler: function(){
+        window.location = logout_path;
+      }
+    });
+    toolbarItems.push("-");
+    toolbarItems.push(user_fullname);
+    toolbarItems.push(btn_logout); 
   
     var numicon = new Ext.form.ComboBox({
       width: 55

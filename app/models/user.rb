@@ -22,6 +22,10 @@ class User < ActiveRecord::Base
   def encrypt_password(pass)
     BCrypt::Engine.hash_secret(pass, password_salt)
   end
+  
+  def fullname
+    [self.fname,self.lname].join(" ")
+  end
 
   private
 

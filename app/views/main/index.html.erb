@@ -1,3 +1,10 @@
 <%= content_for :head do %>
-  <%= javascript_include_tag    "main", :media => "all" %>
+  <script type="text/javascript">
+    geoext_path = "<%= asset_path "geoext2/src/GeoExt" %>";
+    ext_path = "<%= asset_path "extjs4/src" %>";
+    geoext_ux_path = "<%= asset_path "geoext_ux" %>";
+    theme_opl_file = "<%= asset_path "theme/default/style.css" %>";
+    logout_path = "<%= logout_path %>";
+    user_fullname = "<%= current_user.fullname %>";
+  </script>
 <% end %>

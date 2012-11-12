@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  #host: 203.151.201.129
+  database: dsi
+  pool: 5
+  username: postgres
+  password: 
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  #host: 203.151.201.129
+  database: dsi
+  pool: 5
+  username: postgres
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  #host: 203.151.201.129
+  database: dsi
+  pool: 5
+  username: postgres
+  password:
